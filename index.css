@@ -1,0 +1,13 @@
+@import url("./vendor/normalize.css");
+@import url("./vendor/fonts.css");
+
+@import url("./blocks/page.css");
+@import url("./blocks/header.css");
+@import url("./blocks/main.css");
+@import url("./blocks/stats.css");
+@import url("./blocks/settings.css");
+@import url("./blocks/divider.css");
+@import url("./blocks/typing-test.css");
+@import url("./blocks/char.css");
+@import url("./blocks/restart.css");
+@import url("./blocks/footer.css");

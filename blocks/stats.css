@@ -1,0 +1,28 @@
+.stats {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #3a3a3a;
+  align-items: start;
+  padding-bottom: 16px;
+}
+
+.stats__container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.stats__item {
+  justify-content: center;
+}
+
+.stats__label {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.stats__value {
+  padding-left: 12px;
+  color: #ffffff;
+  font-size: 1.5rem;
+}

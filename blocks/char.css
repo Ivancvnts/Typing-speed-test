@@ -1,0 +1,16 @@
+.char {
+  color: #949497;
+}
+
+.char--correct {
+  color: #4dd67b;
+}
+
+.char--incorrect {
+  color: #d64d5b;
+}
+
+.char--current {
+  background-color: #ffffff;
+  opacity: 0.2;
+}

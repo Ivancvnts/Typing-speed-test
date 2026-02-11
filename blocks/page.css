@@ -1,0 +1,10 @@
+.page {
+  background-color: hsl(0, 0%, 7%);
+  color: #949497;
+  font-family: sora, Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}

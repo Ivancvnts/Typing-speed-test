@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__score {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.header__score-icon {
+  width: auto;
+  height: 1em;
+}
+
+.header__score-label {
+  color: #949497;
+  line-height: 120%;
+}
+
+.header__score-value {
+  color: #ffffff;
+}

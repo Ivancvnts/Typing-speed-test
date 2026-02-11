@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Sora/static/Sora-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/Sora/static/Sora-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sora";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../assets/fonts/Sora/static/Sora-Bold.ttf") format("truetype");
+}

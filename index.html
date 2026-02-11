@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Frontend Mentor | Typing Speed Test</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <img class="header__logo" src="./assets/images/logo-large.svg" alt="" />
+      <div class="header__score">
+        <img
+          class="header__score-icon"
+          src="./assets/images/icon-personal-best.svg"
+          alt="Trophy Icon"
+        />
+        <p class="header__score-label">
+          Personal best: <span class="header__score-value">92WPM</span>
+        </p>
+      </div>
+    </header>
+    <main class="main">
+      <section class="stats">
+        <div class="stats__container">
+          <div class="stats__item">
+            <p class="stats__label">
+              WPM:<span class="stats__value" id="wpm">0</span>
+            </p>
+          </div>
+          <div class="divider"></div>
+          <div class="stats__item">
+            <p class="stats__label">
+              Accuracy:<span class="stats__value" id="accuracy">100%</span>
+            </p>
+          </div>
+          <div class="divider"></div>
+          <div class="stats__item">
+            <p class="stats__label">
+              Time:<span class="stats__value" id="time">0:60</span>
+            </p>
+          </div>
+        </div>
+        <div class="settings">
+          <div class="settings__group" id="difficulty">
+            <p class="settings__label">Difficulty:</p>
+            <button class="settings__option settings__option--active">
+              Easy
+            </button>
+            <button class="settings__option">Medium</button>
+            <button class="settings__option">Hard</button>
+          </div>
+          <div class="divider"></div>
+          <div class="settings__group" id="mode">
+            <p class="settings__label">Mode:</p>
+            <button class="settings__option settings__option--active">
+              Timed(60s)
+            </button>
+            <button class="settings__option">Passage</button>
+          </div>
+        </div>
+      </section>
+      <section class="typing-test">
+        <div class="typing-test__content">
+          <p class="typing-test__passage" id="passage">
+            The archaeological expedition unearthed artifacts that complicated
+            prevailing theories about Bronze Age trade networks. Obsidian from
+            Anatolia, lapis lazuli from Afghanistan, and amber from the
+            Baltic—all discovered in a single Mycenaean tomb—suggested
+            commercial connections far more extensive than previously
+            hypothesized. "We've underestimated ancient peoples' navigational
+            capabilities and their appetite for luxury goods," the lead
+            researcher observed. "Globalization isn't as modern as we assume."
+          </p>
+        </div>
+        <div class="typing-test__overlay">
+          <button class="typing-test__button" id="start-button">
+            Start Typing Test
+          </button>
+          <p class="typing-test__instruction">
+            Or click the text and start typing
+          </p>
+        </div>
+        <input
+          class="typing-test__input"
+          type="text"
+          id="test-input"
+          autocomplete="off"
+        />
+      </section>
+      <section class="restart">
+        <button class="restart__button" id="restart">
+          Restart
+          <img
+            class="restart__icon"
+            src="./assets/images/icon-restart.svg"
+            alt=""
+          />
+        </button>
+      </section>
+    </main>
+    <footer class="footer">
+      Challenge by
+      <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        class="footer__link"
+        href="https://www.linkedin.com/in/victor-ivan-cervantes-jimenez-a2386816a/"
+        >Ivan Cervantes</a
+      >.
+    </footer>
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>

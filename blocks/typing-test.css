@@ -1,0 +1,63 @@
+.typing-test {
+  position: relative;
+}
+
+.typing-test__content {
+  filter: blur(16px);
+  opacity: 0.6;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.typing-test__content--active {
+  filter: blur(0);
+  opacity: 1;
+}
+
+.typing-test__passage {
+  font-size: 2.5em;
+  line-height: 136%;
+  letter-spacing: 0.4px;
+}
+
+.typing-test__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s ease;
+}
+
+.typing-test__overlay--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.typing-test__button {
+  background-color: #177dff;
+  border-radius: 12px;
+  width: 216px;
+  height: 56px;
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 120%;
+  color: white;
+}
+
+.typing-test__instruction {
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 120%;
+  color: white;
+}
+
+.typing-test__input {
+  opacity: 0;
+  pointer-events: none;
+}

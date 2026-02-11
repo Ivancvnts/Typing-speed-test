@@ -1,0 +1,32 @@
+.settings {
+  display: flex;
+  gap: 1em;
+}
+
+.settings__group {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.settings__label {
+  margin: 0;
+}
+
+.settings__option {
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid #717178;
+  font-size: 1em;
+  line-height: 120%;
+  height: 31px;
+}
+
+.settings__option:hover {
+  border: 1px solid #177dff;
+}
+
+.settings__option--active {
+  border: 1px solid #4ca6ff;
+}

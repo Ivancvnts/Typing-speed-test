@@ -1,0 +1,32 @@
+.restart {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-top: 1px solid #262626;
+  padding-top: 32px;
+}
+
+.restart__button {
+  height: 56px;
+  width: 181px;
+  background-color: #262626;
+  color: white;
+  font-weight: 500;
+  font-size: 1.25em;
+  border-radius: 12px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.restart__button--hidden {
+  display: none;
+}
+
+.restart__icon {
+  height: 1.25rem;
+}
