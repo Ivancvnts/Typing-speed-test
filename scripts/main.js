@@ -16,8 +16,10 @@ let passage;
 let correctChars = 0;
 let incorrectChars = 0;
 let totalTyped = 0;
+let timer = null;
 let startTime = null;
 let endTime = null;
+let personalBest = 0;
 
 const startBtn = document.querySelector("#start-button");
 const inputEl = document.querySelector("#test-input");
@@ -48,6 +50,11 @@ modeBtns.forEach((button) => {
 });
 
 async function startTest(difficulty) {
+  if (timer) {
+    clearInterval(timer);
+    timer = null;
+  }
+
   const passages = await loadPassages();
   const text = getRandomPassage(passages, difficulty).text;
 
@@ -60,24 +67,31 @@ async function startTest(difficulty) {
 
   renderPassage(text);
   hideOverlay();
+  inputEl.value = "";
   inputEl.focus();
+
   setCharState(currentIndex, "current");
   let seconds = mode === "passage" ? 0 : 60;
+  updateTimer(seconds);
 
-  const timer = setInterval(() => {
-    updateTimer(seconds);
-
+  timer = setInterval(() => {
     if (mode === "passage") {
       seconds++;
     } else {
       seconds--;
     }
 
-    if (seconds < 0) {
-      clearInterval(timer);
-      endTime = Date.now();
+    updateTimer(seconds);
+
+    if (mode !== "passage" && seconds < 0) {
+      endTest();
     }
   }, 1000);
+}
+
+function endTest() {
+  clearInterval(timer);
+  endTime = Date.now();
 }
 
 function calculateWPM(correctChars, minutes) {
@@ -113,6 +127,8 @@ inputEl.addEventListener("keyup", (event) => {
 
   if (currentIndex < passage.length) {
     setCharState(currentIndex, "current");
+  } else {
+    endTest();
   }
   const elapsedTime = (Date.now() - startTime) / 1000 / 60;
   const wpm = calculateWPM(correctChars, elapsedTime);

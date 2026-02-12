@@ -4,6 +4,7 @@ const contentEl = document.querySelector(".typing-test__content");
 const timeEl = document.querySelector("#time");
 const wpmEl = document.querySelector("#wpm");
 const accuracyEl = document.querySelector("#accuracy");
+const personalBestEl = document.querySelector("#personal-best");
 
 const difficultyBtns = document
   .querySelector("#difficulty")

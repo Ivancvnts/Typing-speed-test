@@ -50,6 +50,10 @@
   color: white;
 }
 
+.typing-test__button:hover {
+  background-color: #4ca6ff;
+}
+
 .typing-test__instruction {
   font-size: 1.25em;
   font-weight: 500;
